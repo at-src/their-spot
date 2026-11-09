@@ -1,0 +1,116 @@
+- !<AssetImportMetadata/8df9659f-e6c7-4f6d-b24f-bd35bbdf3eaa>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 92c6de03-4208-4e09-ad2f-a2223a21fd1f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 92c6de03-4208-4e09-ad2f-a2223a21fd1f
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 6c5a77ce-20f4-4e35-b17a-9675e1fd7f64
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/6c5a77ce-20f4-4e35-b17a-9675e1fd7f64>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: e46647df-4936-4cf4-b48a-45021e76ecf8
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    ballMaterial: false
+    camera: false
+    debugColliders: false
+    flameCoreMaterial: false
+    flameOuterMaterial: false
+    floorBelowEyesCm: false
+    glowIntensity: false
+    memorialAnchor: false
+    musicVolume: false
+    noteText: false
+    petName: false
+    petPhoto: false
+    petSpeedCmPerSec: false
+    petYears: false
+    photoMaterial: false
+    photoViewDistanceCm: false
+    photoViewScale: false
+    ringDistanceCm: false
+    ringMaterial: false
+    sphereMesh: false
+    testKeys: false
+    ui: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - camera: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      memorialAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ui: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      sphereMesh: !<reference.RenderMesh> 00000000-0000-0000-0000-000000000000
+      flameCoreMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      flameOuterMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      ringMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      photoMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      ballMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      petPhoto: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      petName: Mochi
+      petYears: 2012 – 2026
+      noteText: "Loved the sunny spot by the window,nstolen socks, and every ballnyou ever threw."
+      glowIntensity: 2.200000
+      ringDistanceCm: !<float> 130.000000
+      floorBelowEyesCm: !<float> 150.000000
+      petSpeedCmPerSec: !<float> 70.000000
+      photoViewDistanceCm: !<float> 80.000000
+      photoViewScale: 1.100000
+      musicVolume: 0.250000
+      debugColliders: false
+      testKeys: true
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TheirSpotMain – memorial flow</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject camera {"hint":"The world camera (Camera Object)"}'
+    - '// @input SceneObject memorialAnchor {"hint":"Authored anchor the memorial is built under"}'
+    - '// @input AssignableType_1 ui {"hint":"UI module with the hint, plaque, reading card and Rest button"}'
+    - '// @input Asset.RenderMesh sphereMesh {"hint":"Sphere mesh used for the flames, ball, bone and treats"}'
+    - '// @input Asset.Material flameCoreMaterial {"hint":"Unlit material for the flame core"}'
+    - '// @input Asset.Material flameOuterMaterial {"hint":"Unlit material for the outer flame"}'
+    - '// @input Asset.Material ringMaterial {"hint":"Unlit material for the placement ring"}'
+    - '// @input Asset.Material photoMaterial {"hint":"Unlit material the pet photo is drawn with"}'
+    - '// @input Asset.Material ballMaterial {"hint":"Lit material for the ball; cloned and recolored for the bone, treats, dish and matches"}'
+    - '// @input Asset.Texture petPhoto {"hint":"Photo shown in the frame"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input string petName = "Mochi" {"hint":"Pet name on the plaque"}'
+    - '// @input string petYears = "2012 – 2026" {"hint":"Years on the plaque"}'
+    - '// @input string noteText = "Loved the sunny spot by the window, stolen socks, and every ball you ever threw." {"hint":"Note shown when the photo is picked up"}'
+    - '// @input float glowIntensity = 4 {"hint":"Brightness of the candlelight", "widget":"slider", "min":0, "max":5, "step":0.1}'
+    - '// @input float ringDistanceCm = 130 {"hint":"How far ahead of the user the placement ring appears (cm)", "widget":"slider", "min":70, "max":250, "step":5}'
+    - "// @input float floorBelowEyesCm = 150 {\"hint\":\"Floor height below the user's eyes at start (cm)\", \"widget\":\"slider\", \"min\":60, \"max\":200, \"step\":5}"
+    - '// @input float petSpeedCmPerSec = 70 {"hint":"Pet walking speed (cm/s)", "widget":"slider", "min":20, "max":200, "step":5}'
+    - '// @input float photoViewDistanceCm = 80 {"hint":"How far in front of the eyes the lifted photo is held (cm)", "widget":"slider", "min":40, "max":120, "step":5}'
+    - '// @input float photoViewScale = 1.1 {"hint":"Size of the lifted photo relative to the frame on the floor", "widget":"slider", "min":1, "max":3, "step":0.05}'
+    - '// @input float musicVolume = 0.25 {"hint":"Background music volume", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input bool debugColliders {"hint":"Draw collider outlines to check hit zones"}'
+    - '// @input bool testKeys = true {"hint":"Preview testing keys (same handlers as the pinches): P place, N photo, C match, H pet, F flower, T ball, B bone, G treat, L lift bed, R rest, D demo"}'
+    - '// @ui {"widget":"group_end"}'
