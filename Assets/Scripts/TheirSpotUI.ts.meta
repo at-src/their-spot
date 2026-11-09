@@ -1,0 +1,74 @@
+- !<AssetImportMetadata/49ae6deb-399b-4cce-95cc-f08e7ad81f07>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 73ce2a64-efe0-4db5-8922-14de14127018
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 73ce2a64-efe0-4db5-8922-14de14127018
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 2c2544b4-eb20-486c-9d85-6ecb643ce8fa
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/2c2544b4-eb20-486c-9d85-6ecb643ce8fa>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 3c3045ec-c061-4975-97bb-69e8d640242d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    heartColor: false
+    hintText: false
+    readHeightCm: false
+    readTextSize: false
+    readWidthCm: false
+    restLabel: false
+    textColor: false
+    textScale: false
+    viewDistanceCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - hintText: Choose their spot
+      restLabel: Rest now
+      textColor: !<Vec4> {x: 1.000000, y: 0.930000, z: 0.820000, w: 1.000000}
+      viewDistanceCm: !<float> 140.000000
+      textScale: 2.500000
+      heartColor: !<Vec4> {x: 1.000000, y: 0.550000, z: 0.650000, w: 1.000000}
+      readWidthCm: !<float> 26.000000
+      readHeightCm: !<float> 20.000000
+      readTextSize: !<float> 150.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TheirSpotUI – hint, plaque and rest button</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input string hintText = "Choose their spot" {"hint":"Hint shown above the placement ring"}'
+    - '// @input string restLabel = "Rest now" {"hint":"Label on the button that lets the pet rest"}'
+    - '// @input vec4 textColor = "{1, 0.93, 0.82, 1}" {"hint":"Warm text color (keep it light: the display is additive)", "widget":"color"}'
+    - '// @input float viewDistanceCm = 140 {"hint":"Approximate viewing distance in cm, used to scale text", "widget":"slider", "min":60, "max":250, "step":5}'
+    - '// @input float textScale = 2.5 {"hint":"Extra multiplier on label size", "widget":"slider", "min":1, "max":5, "step":0.25}'
+    - '// @input vec4 heartColor = "{1, 0.55, 0.65, 1}" {"hint":"Color of the hearts when the pet is petted", "widget":"color"}'
+    - '// @input float readWidthCm = 22 {"hint":"Reading card width (cm), shown beside the lifted photo", "widget":"slider", "min":10, "max":50, "step":1}'
+    - '// @input float readHeightCm = 17 {"hint":"Reading card height (cm)", "widget":"slider", "min":8, "max":40, "step":1}'
+    - '// @input float readTextSize = 150 {"hint":"Text size of the note on the reading card (shrinks to fit the card)", "widget":"slider", "min":40, "max":400, "step":5}'
+    - '// @ui {"widget":"group_end"}'
